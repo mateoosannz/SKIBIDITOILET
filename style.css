@@ -1,0 +1,17 @@
+.boton-animado {
+  padding: 15px 30px;
+  background: #1e90ff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #1e90ff;
+}
+
+.boton-animado:hover {
+  transform: scale(1.1);
+  background: #63b3ed;
+  box-shadow: 0 0 20px #63b3ed;
+}
