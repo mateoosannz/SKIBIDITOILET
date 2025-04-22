@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
- <button class="animated-button" onclick="document.body.style.backgroundColor = 'red'">
-  CLICK HERE 
-</button>
+ <button class="animated-button" onclick="cambiarColorFondo()">CLICK HERE</button>
+
   
   <head>
     <title>SKIBIDITOILET</title>
@@ -23,5 +22,17 @@
     <p><a href=https://www.nba.com/>Check out the NBA site</a></p>
 
   </body>
+<script>
+  function cambiarColorFondo() {
+    let color;
+    do {
+      color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    } while (color === "#000000" || color === "#ffffff" || color.length !== 7);
+    
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+
 </html>
 
