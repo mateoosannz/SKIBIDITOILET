@@ -14,20 +14,50 @@
   transform: scale(1.1);
   background: #63b3ed;
   box-shadow: 0 0 20px #63b3ed;
- <p style="font-size: 24px;">This is larger text</p>
- <head>
-  <style>
-    p {
-      font-size: 24px;
-    }
-  </style>
-</head>
-<body>
-  <p>This is larger text</p>
-</body>
   /* style.css */
 p {
   font-size: 24px;
 }
-  
-  }
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00f0ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 25px #ffffff;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
